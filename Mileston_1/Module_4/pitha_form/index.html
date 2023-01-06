@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitha Form</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h2>Welcome to Jamal er Ma Pitha Ghor</h2>
+    <form>
+
+        <label for="name">
+            Your Name:
+            <input type="text" id="name" placeholder="Your Name">
+        </label>
+
+        <label for="email">
+            Your Email:
+            <input type="email" id="email" placeholder="Your Email">
+        </label>
+
+        <label for="digit">
+            Your Contact Number:
+            <input type="number" id="digit" placeholder="Your Contact Number">
+        </label>
+
+        <fieldset>
+            <legend>Pick One Pitha</legend>
+            <label for="Chitoi">
+                <input type="radio" name="pitha" id="Chitoi">
+                Chitoi Pitha
+            </label>
+            <label for="Vapa">
+                <input type="radio" name="pitha" id="vapa">
+                Vapa Pitha
+            </label>
+            <label for="dudh">
+                <input type="radio" name="pitha" id="dudh">
+                Dudh Puli Pitha
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select One or More Vorta</legend>
+            <label for="sorisha">
+                    <input type="checkbox" name="vorta" id="sorisha">
+                    Sorisha Vorta
+            </label>
+            <label for="shutki">
+                    <input type="checkbox" name="vorta" id="shutki">
+                    Shutki Vorta
+            </label>
+            <label for="dal">
+                    <input type="checkbox" name="vorta" id="dal">
+                    Dal Vorta
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Special Instruction</legend>
+            <textarea cols="80" rows="8"></textarea>
+        </fieldset>
+
+        <input style="margin-top: 10px; display: block;" type="reset">
+
+        <input style="margin-top: 10px; display: block;" type="submit">
+
+    </form>
+
+</body>
+</html>
