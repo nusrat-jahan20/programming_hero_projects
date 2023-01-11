@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Grid Layout</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .heading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(103, 108, 106);
+        }
+        .container {
+            background-color: rgb(205, 249, 249);
+            padding: 5px;
+            grid-gap: 5px;
+            display: grid;
+            /* grid-template-columns: 200px 300px 500px 270px; */
+            /* grid-template-columns: 200px 300px auto 250px; */
+            /* grid-template-columns: repeat(5, 1fr); */
+            /* grid-template-columns: repeat(3, 1fr) 200px; */
+            /* grid-template-columns: repeat(3, 1fr) auto; */
+            /* grid-template-columns: repeat(4, 1fr) 2fr; */
+            grid-template-columns: repeat(2, 1fr) 300px 150px;
+
+
+        }
+        .item {
+            background-color: rgb(199, 223, 216);
+            color: rgb(102, 86, 86);
+            padding: 20px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="heading">
+        <h2>Explore Grid Layout</h2>
+    </div>
+    <div class="container">
+        <div class="item">Item-1</div>
+        <div class="item">Item-2</div>
+        <div class="item">Item-3</div>
+        <div class="item">Item-4</div>
+        <div class="item">Item-5</div>
+        <div class="item">Item-6</div>
+        <div class="item">Item-7</div>
+        <div class="item">Item-8</div>
+        <div class="item">Item-9</div>
+        <div class="item">Item-10</div>
+        <div class="item">Item-11</div>
+        <div class="item">Item-12</div>
+        <div class="item">Item-13</div>
+        <div class="item">Item-14</div>
+        <div class="item">Item-15</div>
+        <div class="item">Item-16</div>
+        <div class="item">Item-17</div>
+        <div class="item">Item-18</div>
+        <div class="item">Item-19</div>
+        <div class="item">Item-20</div>
+    </div>
+
+</body>
+</html>
