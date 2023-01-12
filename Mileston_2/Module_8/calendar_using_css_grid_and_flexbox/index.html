@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .calender-title {
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #164e6a;
+        }
+        .calender {
+            background-color: rgb(203, 235, 244);
+            border: 1px solid rgb(108, 218, 246);
+            padding: 18px;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 60px repeat(5, 75px);
+            column-gap: 25px;
+            row-gap: 20px;
+        }
+        .date, .day{
+            cursor: pointer;
+            background-color: rgb(41, 158, 171);
+            color: rgb(255, 255, 255);
+            border: 1px solid rgb(86, 86, 246);
+            font-size: 2em;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .other-month {
+            background-color: #8a8d8e;
+            border: 1px solid rgb(110, 110, 118);
+        }
+        .day {
+            font-size: 1.5em;
+            background-color: #164e6a;
+            border: 1px solid rgb(2, 2, 46);
+        }
+    </style>
+</head>
+<body>
+    <div class="calender-title">
+        <h1>Fabruary 2023</h1>
+    </div>
+    <div class="calender">
+        <div class="day">SUN</div>
+        <div class="day">MON</div>
+        <div class="day">TUE</div>
+        <div class="day">WED</div>
+        <div class="day">THR</div>
+        <div class="day">FRI</div>
+        <div class="day">SAT</div>
+        <div class="date other-month">29</div>
+        <div class="date other-month">30</div>
+        <div class="date other-month">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date" title="Nusrat Jahan's Birthday">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date other-month">1</div>
+        <div class="date other-month">2</div>
+        <div class="date other-month">3</div>
+        <div class="date other-month">4</div>
+
+    </div>
+</body>
+</html>

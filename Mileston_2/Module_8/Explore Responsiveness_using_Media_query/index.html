@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Responsiveness using Media query</title>
+    <style>
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .title {
+            color: rgb(79, 30, 8);
+            display: flex;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 40px;
+            padding: 40px;
+        }
+        .food {
+            border: 1px solid rgb(247, 205, 138);
+            border-radius: 5px;
+            padding: 20px;
+        }
+        .food p {
+            color: rgb(82, 82, 82);
+        }
+        img {
+            width: 100%;
+            height: 240px;
+            border-radius: 7px;
+        }
+        button {
+            background-color: rgb(255, 153, 0);
+            color: whitesmoke;
+            font-size: 1.1em;
+            border: 0;
+            padding: 7px 14px;
+            border-radius: 5px;
+        }
+        button:hover {
+            cursor: pointer;
+            background: rgb(250, 182, 45);
+        }
+        @media screen and (max-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .title {
+                width: 80%;
+                margin: 0 auto;
+                align-items: center;
+            }
+        }
+        @media screen and (max-width: 1000px) and (min-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <h2>Welcome to Nusrat's World</h2>
+    </div>
+    <div class="container">
+        <div class="food">
+            <img src="../image/food_photography.jpg" alt="">
+            <h2>Photography - 1</h2>
+            <h4>Food Photography</h4>
+            <p>Food photography is a still life photography genre used to create attractive still life photographs of food.</p>
+            <button>Other Photography</button>
+        </div>
+        <div class="food">
+            <img src="../image/food.jpg" alt="">
+            <h2>Photography - 2</h2>
+            <h4>Food Photography</h4>
+            <p>Food photography is a still life photography genre used to create attractive still life photographs of food.</p>
+            <button>Other Photography</button>
+        </div>
+        <div class="food">
+            <img src="../image/cake.jpg" alt="">
+            <h2>Photography - 3</h2>
+            <h4>Food Photography</h4>
+            <p>Food photography is a still life photography genre used to create attractive still life photographs of food.</p>
+            <button>Other Photography</button>
+        </div>
+        <div class="food">
+            <img src="../image/coffee-2.jpg" alt="">
+            <h2>Photography - 4</h2>
+            <h4>Food Photography</h4>
+            <p>Food photography is a still life photography genre used to create attractive still life photographs of food.</p>
+            <button>Other Photography</button>
+        </div>
+        <div class="food">
+            <img src="../image/drinks.jpeg" alt="">
+            <h2>Photography - 5</h2>
+            <h4>Food Photography</h4>
+            <p>Food photography is a still life photography genre used to create attractive still life photographs of food.</p>
+            <button>Other Photography</button>
+        </div>
+        <div class="food">
+            <img src="../image/snacks.jpeg" alt="">
+            <h2>Photography - 6</h2>
+            <h4>Food Photography</h4>
+            <p>Food photography is a still life photography genre used to create attractive still life photographs of food.</p>
+            <button>Other Photography</button>
+        </div>
+        <div class="food">
+            <img src="../image/photographer.jpg" alt="">
+            <h2>Photography - 7</h2>
+            <h4>Food Photography</h4>
+            <p>Food photography is a still life photography genre used to create attractive still life photographs of food.</p>
+            <button>Other Photography</button>
+        </div>
+        <div class="food">
+            <img src="../image/sundor.webp" alt="">
+            <h2>Photography - 8</h2>
+            <h4>Food Photography</h4>
+            <p>Food photography is a still life photography genre used to create attractive still life photographs of food.</p>
+            <button>Other Photography</button>
+        </div>
+        <div class="food">
+            <img src="../image/food.jpg" alt="">
+            <h2>Photography - 9</h2>
+            <h4>Food Photography</h4>
+            <p>Food photography is a still life photography genre used to create attractive still life photographs of food.</p>
+            <button>Other Photography</button>
+        </div>
+    </div>
+</body>
+</html>
