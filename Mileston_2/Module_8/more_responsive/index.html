@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Responsive</title>
+    <style>
+        body {
+            width: 1000px;
+            margin:  0 auto;
+        }
+        section {
+            font-size: 8vw;
+        }
+        .section-two {
+            display: flex;
+        }
+        .section-two .split {
+            width: 50%;
+        }
+        .split img {
+            width: 100%;
+            border-radius: 5px
+        }
+        @media screen and (max-width: 550px) {
+            .section-two {
+                flex-direction: column-reverse;
+            }
+            .section-two .split {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <p>welcome to my world</p>
+    </section>
+    <div class="section-two">
+        <div class="split">
+            <img src="../image/cake.jpg" alt="">
+        </div>
+        <div class="split">
+            <img src="../image/coffee.jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>
