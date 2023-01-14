@@ -1,0 +1,39 @@
+* {
+    font-family: cursive;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.box {
+    /* width: 100px; */
+    /* height: 140px; */
+    background-color: coral;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    border-radius: 5px;
+    /* padding: 10px; */
+}
+.container {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 150px repeat(4, 1fr);grid-template-rows: 180px 100px 150px 220px;
+}
+.sidebar {
+    grid-row: 1 / 5;
+}
+.header {
+    grid-column: 2 / 6;
+}
+.chart_one {
+    grid-column: 2 / 4;
+}
+.chart_two {
+    grid-column: 4 / 6;
+}
+.overview {
+    grid-column: 2 / 5;
+}
