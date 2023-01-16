@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flex with media query</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+        .box {
+            background: gold;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 700;
+            font-family: sans-serif;
+            height: 200px;
+            width: 100%;
+            /* -----------------------  */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* ------------------------- */
+        }
+        @media only screen and (max-width : 576px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+
+        @media only screen and (min-width : 577px) and (max-width : 1000px) {
+            .container {
+                flex-wrap: wrap;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="box"><h1>BOX 1</h1></div>
+        <div class="box"><h1>BOX 2</h1></div>
+        <div class="box"><h1>BOX 3</h1></div>
+        <div class="box"><h1>BOX 4</h1></div>
+    </section>
+</body>
+</html>
