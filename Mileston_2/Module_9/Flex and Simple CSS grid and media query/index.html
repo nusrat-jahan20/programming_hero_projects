@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex and Simple CSS grid and media query</title>
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: repeat(3, 150px);
+            gap: 10px;
+        }
+        .box {
+            background-color: #ffa17f;
+            color: aliceblue;
+            border-radius: 7px;
+            text-align: center;
+        }
+        #box-3 {
+            grid-column: 1;
+            grid-row: span 2;
+        }
+        #box-2 {
+            grid-column: 2;
+            grid-row: span 3;
+        }
+        @media  (max-width: 576px ) {
+            .container {
+                grid-template-columns: repeat(1,1fr);
+            }
+            .box {
+                background-color: rgb(27, 91, 252);
+            }
+            #box-2 {
+                grid-column: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flex and Simple CSS grid and media query</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div class="box" id="box-1">
+                <h2>BOX-1</h2>
+            </div>
+            <div class="box" id="box-2">
+                <h2>BOX-2</h2>
+            </div>
+            <div class="box" id="box-3">
+                <h2>BOX-3</h2>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
