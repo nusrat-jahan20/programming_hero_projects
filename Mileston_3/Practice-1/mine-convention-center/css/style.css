@@ -1,0 +1,56 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.banner-img-1 {
+    background-image: url(../images/banner.png);
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-img-2 {
+    background-image: linear-gradient(to bottom, #21212185,
+    #35353594), url(../images/cover-5.jpg);
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-img-3 {
+    background-image: linear-gradient(to bottom, #2f2f2f71,
+    #22222294), url(../images/banner-3.jpg);
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-img-4 {
+    background: linear-gradient(to bottom, #2323238a, #22222294), url(../images/cover-6.jpg);
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.box {
+    border-radius: 30px;
+    transition: translate 1s ease;
+}
+.box:hover {
+    background: #3F87F5;
+    color: #ffffff;
+    translate: 0 -30px;
+}
+.box:hover + p {
+    color: #fff;
+}
