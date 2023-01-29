@@ -50,7 +50,5 @@
     background: #3F87F5;
     color: #ffffff;
     translate: 0 -30px;
-}
-.box:hover + p {
-    color: #fff;
+    box-shadow: 0px 42px 34px rgba(58, 134, 247, 0.267);
 }

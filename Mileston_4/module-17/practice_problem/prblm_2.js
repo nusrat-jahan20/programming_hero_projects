@@ -6,4 +6,7 @@ var bang = 99.50;
 
 var average = (math + bio + chem + phy + bang) / 5;
 average = average.toFixed(2);
-console.log(average);
+average = parseFloat(average);
+// console.log(average);
+console.log(6 != 6);
+ console.log(6 >= 6);
