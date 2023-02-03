@@ -37,5 +37,5 @@ var salary = 2000000;
 var employe = 15;
 // console.log(salary % employe);
 
-var eachSalary = salary % employe;
-console.log(eachSalary);
+var remainingTaka = salary % employe;
+console.log(remainingTaka);
