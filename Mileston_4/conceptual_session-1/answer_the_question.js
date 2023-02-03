@@ -206,6 +206,87 @@
 //    }
 
 // 28. output 'Aske amar mon valo nai!' 39 times
-A: for (var i = 0; i >= 9; i++) {
-        console.log('Aske amar mon valo nai!');
-   }
+// A: for (var i = 1; i <= 39; i++) {
+//         console.log(i, 'Aske amar mon valo nai!');
+//    }
+
+// 29. How while loop works?
+// A:  var i = 0;
+//     while (i < 5) {
+//         console.log('hello! nusrat') ;
+//         i++;
+//     }
+
+// 30. How for loop works?
+// A: for (var i = 1; i <= 39; i++) {
+//         console.log(i, 'Aske amar mon valo nai!');
+//    }
+
+// 31. while loop e variable change na korle ki hoy?
+// A: infinite loop hoy jabe.
+
+// 32. show number 58 to 98
+// A: for (i = 58; i <= 98; i++) {
+//         console.log(i);
+//     }
+
+// 33. show all even number between 412 to 456.
+// A: for (i = 412; i <= 456; i++) {
+//       if(i % 2 == 0) {
+//         console.log(i);
+//       }
+//     }
+
+// 34. show all odd number between 581 to 623.
+// A: for (i = 581; i <= 623; i++) {
+//       if(i % 2 == 1) {
+//         console.log(i);
+//       }
+//     }
+
+// 35. Difference between while and for loop.
+// A: The for and while loops are both conditional statements. A for loop is a single-line command that will be executed repeatedly. While loops can be single-lined or contain multiple commands for a single condition. only writing syntex is deferance between for and while loop.
+
+// 36. তুমি এতদিন যা যা জিনিস শিখছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা for লুপ দিয়ে সেই array এর সব উপাদান কে আউটপুট হিসেবে দেখাও। 
+// A: var learning = ['variable', 'array', 'mathematical-operation', 'condition', 'for-loop'];
+//    for(i = 0; i < learning.length; i++) {
+//         console.log(learning[i]);
+//    }
+
+// 37. তুমি এতদিন পর্যন্ত যে যে মডেলের মোবাইল ফোন ইউজ করেছো সেগুলার নাম দিয়ে একটা array বানাও। তারপর একটা while লুপ দিয়ে সেই array এর উপাদান গুলা একটা একটা করে আউটপুট হিসেবে দেখাও 
+// A: var phone_model = ['Samsung', 'Nokia', 'Redmi', 'Oppo', 'Apple', 'One Plus'];
+//    var i = 0; 
+//    while (i < phone_model.length) {
+//        console.log(phone_model[i]) ;
+//        i++;
+//    }
+
+// 38. একটা ফর লুপ চালাও। ৩০ থেকে ৮৬ পর্যন্ত। আর এই লুপ ৪৪ এ গেলে ব্রেক করবে। সেই জিনিস কোড করে দেখাও 
+// A:   for(i = 30; i <= 86; i++) {
+//           if(i == 44) {
+//                break;
+//           }
+//           console.log(i);
+//      }
+
+// 39. তোমার যত বই আছে সেগুলার দাম নিয়ে একটা array লিখে ফেলো। যে বই গুলোর দাম ২০০ টাকার উপরে সেগুলাকে স্কিপ করবে। অর্থাৎ সেগুলাকে আউটপুট হিসেবে দেখাবে না। বাকিদের কে আউটপুট হিসেবে দেখাবে। দেখো করতে পারো কিনা। 
+// A:   var book_price = [225, 300, 100, 120, 330, 150, 80, 150];
+//      for(i = 0; i < book_price.length; i++) {
+//           if (book_price[i] > 200) {
+//                continue;
+//           }
+//           console.log(book_price[i]);
+//      }
+
+
+
+
+
+
+
+
+
+
+
+
+
