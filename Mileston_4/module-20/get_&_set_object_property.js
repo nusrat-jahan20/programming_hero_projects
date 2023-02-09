@@ -16,7 +16,7 @@ console.log('Books =', countBook);
 var countNotebook = shopingCart['notebooks'];
 console.log('Notebooks =', countNotebook);
 
-// get object property values (2)
+// get object property values (3)
 var propertyName = 'pen';
 var countPen = shopingCart[propertyName];
 console.log('Pens =', countPen);
