@@ -3,7 +3,7 @@
 ----------------------*/
 
  
-let content = 'A variable declared with var is defined throughout the program. One of the issues with using the var keyword was redeclaring a variable inside a block will also redeclare the variable outside the block. Variable declared by let caNnot bE redeclared and must be declared before use whereas variables declared with var keyword are hoisted.'
+const content = 'A variable declared with var is defined throughout the program. One of the issues with using the var keyword was redeclaring a variable inside a block will also redeclare the variable outside the block. Variable declared by let caNnot bE redeclared and must be declared before use whereas variables declared with var keyword are hoisted.'
 
 // var doesExit = content.includes('will also redeclare');
 // console.log(doesExit);
