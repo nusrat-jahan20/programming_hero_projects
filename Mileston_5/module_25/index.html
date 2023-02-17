@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction of DOM</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <style>
+      h1 {
+        color: crimson;
+      }
+      li {
+        color: coral;
+      }
+      .important-places {
+        color: #00c4c4;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to DOM World</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        quod magnam distinctio, obcaecati laborum sequi repellat labore ipsa.
+        Voluptatibus laboriosam magnam commodi expedita nisi, quas culpa dolores
+        eos magni consequuntur!
+      </p>
+    </header>
+    <main>
+      <section>
+        <h1 id="menu-title">My Table Menu</h1>
+        <ul>
+          <li>Potato Mashed</li>
+          <li>Fish Carry</li>
+          <li>Chicken Fry</li>
+          <li>Rice</li>
+        </ul>
+      </section>
+      <section class="fruits-container">
+        <h1 id="fruits-title" class="some-class random-class blue-bg">
+          Fruits I Like
+        </h1>
+        <ul>
+          <li>Banana</li>
+          <li>Apple</li>
+          <li>Carrot</li>
+        </ul>
+      </section>
+      <section>
+        <h1>Place I visit</h1>
+        <ul>
+          <li class="important">Sundorbon</li>
+          <li class="important">Bandorbon</li>
+          <li class="important">Shalbon</li>
+          <li>Katabon</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="js/dom.js"></script>
+    <script>
+      const liCollection = document.getElementsByTagName("li");
+      console.log(liCollection);
+
+      for (const li of liCollection) {
+        console.log(li);
+      }
+
+      const allHeading = document.getElementsByTagName("h1");
+
+      for (const h1 of allHeading) {
+        console.log(h1.innerText);
+      }
+
+      const places = document.getElementsByClassName("important");
+
+      for (const important of places) {
+        console.log(important.innerText);
+      }
+
+      const fruits = document.getElementById("fruits-title");
+      console.log(fruits);
+      fruits.innerText = "Fruits Changed by JavaScript";
+    </script>
+  </body>
+</html>
