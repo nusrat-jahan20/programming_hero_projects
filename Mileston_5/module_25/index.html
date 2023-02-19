@@ -32,7 +32,7 @@
     <main>
       <section>
         <h1 id="menu-title">My Table Menu</h1>
-        <ul>
+        <ul id="menu-list">
           <li>Potato Mashed</li>
           <li>Fish Carry</li>
           <li>Chicken Fry</li>
@@ -43,7 +43,7 @@
         <h1 id="fruits-title" class="some-class random-class blue-bg">
           Fruits I Like
         </h1>
-        <ul>
+        <ul id="fruits-list">
           <li>Banana</li>
           <li>Apple</li>
           <li>Carrot</li>
@@ -61,29 +61,5 @@
     </main>
 
     <script src="js/dom.js"></script>
-    <script>
-      const liCollection = document.getElementsByTagName("li");
-      console.log(liCollection);
-
-      for (const li of liCollection) {
-        console.log(li);
-      }
-
-      const allHeading = document.getElementsByTagName("h1");
-
-      for (const h1 of allHeading) {
-        console.log(h1.innerText);
-      }
-
-      const places = document.getElementsByClassName("important");
-
-      for (const important of places) {
-        console.log(important.innerText);
-      }
-
-      const fruits = document.getElementById("fruits-title");
-      console.log(fruits);
-      fruits.innerText = "Fruits Changed by JavaScript";
-    </script>
   </body>
 </html>
