@@ -38,6 +38,6 @@ for (const section of sections) {
     section.style.borderRadius = '5px'
     section.style.background = 'lightpink'   
 }
-const fruitsContainerId = document.getElementById('fruits-container-id');
-fruitsContainerId.classList.add('greenish-bg');
-fruitsContainerId.classList.remove('random-class')
+const fruitsContainer = document.getElementById('fruits-container');
+fruitsContainer.classList.add('greenish-bg');
+fruitsContainer.classList.remove('large-text')

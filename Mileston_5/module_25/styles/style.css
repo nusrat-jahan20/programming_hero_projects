@@ -3,7 +3,8 @@ h1 {
 }
 
 li {
-    color: coral;
+    color: #be0341;
+    font-weight: 600;
 }
 
 .important-places {
@@ -11,13 +12,14 @@ li {
 }
 
 .greenish-bg {
-    background: #d3ff50 !important;
+    background: #d5ff55 !important;
     text-align: center;
 }
 .greenish-bg li {
+    color: green;
     list-style: none;
 }
-.random-class {
-    font-size: 2em; /* problem */
+.large-text {
+    font-size: 5em; /* problem */
 }
 
