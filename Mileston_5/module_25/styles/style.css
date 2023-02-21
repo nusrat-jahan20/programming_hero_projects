@@ -1,0 +1,23 @@
+h1 {
+    color: crimson;
+}
+
+li {
+    color: coral;
+}
+
+.important-places {
+    color: #00c4c4;
+}
+
+.greenish-bg {
+    background: #d3ff50 !important;
+    text-align: center;
+}
+.greenish-bg li {
+    list-style: none;
+}
+.random-class {
+    font-size: 2em; /* problem */
+}
+
