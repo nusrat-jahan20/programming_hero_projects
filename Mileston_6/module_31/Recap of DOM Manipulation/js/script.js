@@ -6,7 +6,7 @@ function randomColor() {
   return 'rgb(' + color.join(', ') + ')';
 } 
 
-document.getElementById('apply-body-bg').addEventListener("click", function(){
+document.getElementById('apply-body-bg-randomly').addEventListener("click", function(){
   document.body.style.backgroundColor = randomColor();
 });
 
