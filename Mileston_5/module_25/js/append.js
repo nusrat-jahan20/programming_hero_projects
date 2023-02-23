@@ -1,4 +1,6 @@
 /*-----add new list in ul-----*/ 
+
+
 // where to add
 const placeList = document.getElementById('place-list');
 
@@ -10,7 +12,9 @@ li.innerText = 'New place added';
 placeList.appendChild(li);
 
 
-/*-----add new section-----*/ 
+/*-----add new section with innerText-----*/ 
+
+
 // where to add
 const container = document.getElementById('container');
 
@@ -43,3 +47,24 @@ section.appendChild(ul);
 
 // add the child
 container.appendChild(section);
+
+
+/*-----add another new section with innerHTML-----*/ 
+
+// where to add
+const newContainer = document.getElementById('container');
+
+// what to add
+const newSection = document.createElement('section');
+newSection.innerHTML = `
+    <h1>Dinner Menu</h1>
+    <ul>
+        <li>Kacchi</li>
+        <li>Morog Polao</li>
+        <li>Salad</li>
+        <li>Borhani</li>
+    </ul>
+`
+
+// add the child
+container.appendChild(newSection);

@@ -11,11 +11,10 @@ document.getElementById('event-listener').addEventListener('click', function() {
 })
 
 // option-3
-document.getElementById('btn-update').addEventListener('click',function() {
-    const inputField = document.getElementById('input-field');
-    const inputText = inputField.value;
+document.getElementById('btn-update').addEventListener('click', function() {
+    const inputText = document.getElementById('input-field');
+    const inputTextValue = inputText.value ;
 
-    const inputTextDisplay = document.getElementById('input-text-display');
-    inputTextDisplay.innerText = inputText;
-    inputField.value = ' '
+    document.getElementById('input-text-display').innerText = inputTextValue;
+    inputText.value = ' '
 })
