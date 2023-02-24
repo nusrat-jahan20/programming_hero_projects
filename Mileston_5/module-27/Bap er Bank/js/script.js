@@ -16,9 +16,9 @@ document.getElementById('submit-btn').addEventListener('click', function() {
     // DANGER: DO NOT VERIFY email / password on the client side
     // step-4: verify email and password
     if(emailValue === 'nusrat.jahan99@gmail.com' && passwordValue === 'secret2000') {
-        console.log('valid user');
+        window.location.href = 'bank.html';
     }
     else {
-        console.log('invalid user')
+        alert('Please type valid email and password!');
     }
 })
