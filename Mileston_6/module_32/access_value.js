@@ -25,5 +25,6 @@ const user = {
         country: 'Bangladesh'
     }
 }
-const info = user.address.street.second;
-console.log(info);
+const info1 = user.address.street.second;
+const info2 = user.address.stret?.second;
+console.log(info1, info2);
