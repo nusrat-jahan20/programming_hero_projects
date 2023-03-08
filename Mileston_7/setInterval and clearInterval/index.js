@@ -1,23 +1,14 @@
-console.log(1)
-
-console.log(2)
-
-let num = 0
+let num1 = 00, num2 = 00;
 
 const intervalid = setInterval(() => {
-    num++
-    if (num < 11) {
-        console.log(num)
+    ++num2;
+    if (num2 < 11) {
+        console.log(num1, num2);
     }
     else {
-        console.log('stop');
-        clearInterval(intervalid)
+        ++num1;
+        num2 = 1;
+        console.log(num1, num2);
     }
-}, 1000)
+}, 1000);
 
-
-console.log(4)
-
-console.log(5)
-
-console.log(6)
